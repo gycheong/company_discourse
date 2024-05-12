@@ -1,0 +1,25 @@
+name: erdos_company_discourse
+channels:
+  - conda-forge
+dependencies:
+  - jupyter 
+  - matplotlib >= 3.8
+  - numpy
+  - openpyxl >= 3.0
+  - pandas >= 2.1
+  - pip = 24.0
+  - praw >= 7.7.0
+  - pyarrow
+  - py-xgboost
+  - python >=3.10
+  - scikit-learn = 1.4.2
+  - seaborn
+  - sqlalchemy
+  - tensorflow
+  - tqdm >= 4.66.0
+  - xgboost = 2.0.3
+  - pmdarima > 2.0
+  - pip:
+      - cinemagoer
+      - lxml
+      - pynytimes
