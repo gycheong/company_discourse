@@ -2,7 +2,7 @@ name: erdos_company_discourse
 channels:
   - conda-forge
 dependencies:
-  - jupyter 
+  - jupyter
   - matplotlib >= 3.8
   - numpy
   - openpyxl >= 3.0
@@ -14,6 +14,7 @@ dependencies:
   - python >=3.10
   - scikit-learn = 1.4.2
   - seaborn
+  - sentence-transformers
   - sqlalchemy
   - tensorflow
   - tqdm >= 4.66.0
