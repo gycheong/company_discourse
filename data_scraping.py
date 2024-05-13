@@ -100,8 +100,7 @@ def load_save_df(subreddit: str, type: str, n: int, time_filter: str = ''):
 
 reddit = praw.Reddit("bot1")
 
-df = load_save_df('Costco', 'hot', 50)
-df_top = load_save_df('Costco', 'top', 50, 'year')
+df = load_save_df('Costco', 'hot', 1000)
 # Example:
 # submissions = get_hot_submissions("Costco", 10)
 # result = get_all_comments(submissions)
