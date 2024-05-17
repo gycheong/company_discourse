@@ -1,5 +1,5 @@
 from sentence_transformers import SentenceTransformer, util
-model = SentenceTransformer("multi-qa-mpnet-base-dot-v1")
+model = SentenceTransformer("all-mpnet-base-v2")
 
 query = 'The quality was very good.'
 
