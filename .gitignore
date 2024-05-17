@@ -2,4 +2,4 @@ __pycache__
 praw.ini
 credentials.py
 .idea/
-Data/
+Data/Vectorized
