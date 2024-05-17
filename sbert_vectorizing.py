@@ -1,8 +1,4 @@
 from sentence_transformers import SentenceTransformer, util
-model = SentenceTransformer("all-mpnet-base-v2")
-
-query = 'The quality was very good.'
-
 
 def calcuate_vectors(comments_list, sbert_model):
     comment_embeddings = sbert_model.encode(comments_list, show_progress_bar=True)
@@ -19,3 +15,15 @@ def calculate_scores(df, query, model):
     df['Score'] = cosine_scores
 
     return df.sort_values(by=['Scores'], ascending=False)
+
+
+model = SentenceTransformer("all-mpnet-base-v2")
+# query = 'The quality was very good.'
+
+df = pd.read_csv('Data/costco_google_reviews.csv')
+df_filtered = df[df['text'].notna()]
+comments = df_filtered['text'].tolist()
+comments_embed = model.encode(comments, show_progress_bar=True)
+vectors = comments_embed.tolist()
+df_final = df_filtered.assign(Vector=vectors)
+df_final.to_csv('Data/Vectorized/costco_google_reviews_all-mpnet-base-v2.csv')
