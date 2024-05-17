@@ -1,7 +1,13 @@
 from sentence_transformers import SentenceTransformer, util
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = SentenceTransformer("multi-qa-mpnet-base-dot-v1")
 
 query = 'The quality was very good.'
+
+
+def calcuate_vectors(comments_list, sbert_model):
+    comment_embeddings = sbert_model.encode(comments_list, show_progress_bar=True)
+    return comment_embeddings
+
 
 # Input: df with 'Comment' column
 #        query string
