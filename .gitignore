@@ -3,3 +3,4 @@ praw.ini
 credentials.py
 .idea/
 Data/Vectorized
+data_raw_2021/
