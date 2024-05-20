@@ -35,7 +35,11 @@ This project involves scraping Google Reviews/Reddit Threads [(using praw)](http
 xx 
 
 ## Data 
-[EDA / descriptive visualizations]
+### Overview
+- [Google Reviews Data](https://datarepo.eng.ucsd.edu/mcauley_group/gdrive/googlelocal/) 
+- Reddit Thread Data 
+
+### [EDA / descriptive visualizations]
 
 ## Models 
 xx 
@@ -50,7 +54,7 @@ xx
     [gycheong](https://github.com/gycheong))
 - [Dohoon Kim](personalWebsiteLink)(![Github](http://i.imgur.com/9I6NRUm.png):
     [dhk628](https://github.com/dhk628))
-- [Hannah Lloyd](personalWebsiteLink)(![Github](http://i.imgur.com/9I6NRUm.png):
+- [Hannah Lloyd](https://hslloyd.github.io/)(![Github](http://i.imgur.com/9I6NRUm.png):
     [hslloyd](https://github.com/hslloyd))
 
 
