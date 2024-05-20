@@ -44,13 +44,13 @@ xx
 [sweet visualizations]
 
 ## Contributing 
--[Vinicius Ambrosi](personalWebsiteLink)(![Github](http://i.imgur.com/9I6NRUm.png):
+- [Vinicius Ambrosi](personalWebsiteLink)(![Github](http://i.imgur.com/9I6NRUm.png):
     [vambrosi](https://github.com/vambrosi))
--[Gilyoung Cheong](personalWebsiteLink)(![Github](http://i.imgur.com/9I6NRUm.png):
+- [Gilyoung Cheong](personalWebsiteLink)(![Github](http://i.imgur.com/9I6NRUm.png):
     [gycheong](https://github.com/gycheong))
--[Dohoon Kim](personalWebsiteLink)(![Github](http://i.imgur.com/9I6NRUm.png):
+- [Dohoon Kim](personalWebsiteLink)(![Github](http://i.imgur.com/9I6NRUm.png):
     [dhk628](https://github.com/dhk628))
--[Hannah Lloyd](personalWebsiteLink)(![Github](http://i.imgur.com/9I6NRUm.png):
+- [Hannah Lloyd](personalWebsiteLink)(![Github](http://i.imgur.com/9I6NRUm.png):
     [hslloyd](https://github.com/hslloyd))
 
 
