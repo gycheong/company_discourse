@@ -1,7 +1,7 @@
 # erdos-companydiscourse
+Traditional methods leverage frequency based metrics to get signal about a company’s discourse online. In this project we are going to leverage alternative features to develop a dashboard that enables companies to monitor and analyze the sentiment surrounding their brand, products, and services across various online channels.
 ## Project Description 
-## Description
-This project involves scraping Google Reviews, vectorizing the review comments using Sentence-BERT (SBERT), and then building machine learning models to predict the sentiment based on predefined queries. The goal is to classify and evaluate reviews on the basis of product quality, price, and service.
+This project involves scraping Google Reviews/Reddit Threads [(using praw)](https://praw.readthedocs.io/en/stable/getting_started/installation.html), vectorizing the review comments using Sentence-BERT [(SBERT)](https://sbert.net/), and then building machine learning models to predict the rating on predefined queries. The goal is to classify and evaluate reviews on the basis of product quality, price, and service.
 
 ## Table of Contents
 - [Project Title](#project-title)
