@@ -54,13 +54,15 @@ We modeled the data useing the following models:
 - [Support Vector Machine for Classification](#support-vector-machine-for-classification)
 - [XGBoost Classifier](#xgboost-classifier)
 - [Feedforward Neural Network](#feedforward-neural-network)
-### Results & Model Comparison
+### Results & Model Comparison 
+#### Accuracy
 <center>
 <img src="images/model_comparison_accuracy.png" width="100%"></img>
 </center> 
 
+#### Cross Entropy
 <center>
-<img src="images/model_comparison_ce.png" width="100%"></img>
+<img src="images/model_comparision_ce.png" width="100%"></img>
 </center> 
 
 
