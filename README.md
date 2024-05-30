@@ -48,6 +48,18 @@ To reproduce the training and testing done for this project you need to:
 ### Overview
 We used the dataset [Google Reviews Data](https://datarepo.eng.ucsd.edu/mcauley_group/gdrive/googlelocal/) to train our models. This dataset includes all Google Maps reviews from 2021 in the United States, up to September 2021. We extracted all reviews associated with a Costco location (usually there is more than one Google Map ID for each Costco warehouse), and we excluded all reviews that were not in English. We did not alter the review text in any way before vectorizing.
 
+After exclusions, the dataset includes 788766 reviews from 2473 unique Google Maps locations. The data is heavily biased towards 5 stars, with the distribution being:
+
+| Rating | Count  | Percentage |
+|:-------|-------:|-----------:|
+| 5      | 528011 | 66.94%     |
+| 4      | 154481 | 19.59%     |
+| 3      | 48264  | 6.12%      |
+| 2      | 18805  | 2.38%      |
+| 1      | 39205  | 4.97%      |
+
+In the figures below, we used 66.94% as the baseline accuracy for our models, which corresponds to always predicting 5 stars.
+
 <center>
 <img src="images/SVG/figure2.svg" width="100%"></img>
 </center>
@@ -71,8 +83,6 @@ We modeled the data useing the following models:
 <center>
 <img src="images/SVG/model_comparison_ce.svg" width="60%"></img>
 </center>
-
-
 
 
 ## Contributing
