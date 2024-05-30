@@ -51,6 +51,7 @@ We used the dataset [Google Reviews Data](https://datarepo.eng.ucsd.edu/mcauley_
 After exclusions, the dataset includes 788766 reviews from 2473 unique Google Maps locations. The data is heavily biased towards 5 stars, with the distribution being:
 
 <center>
+
 | Rating | Count  | Percentage |
 |:-------|-------:|-----------:|
 | 5      | 528011 | 66.94%     |
@@ -58,6 +59,7 @@ After exclusions, the dataset includes 788766 reviews from 2473 unique Google Ma
 | 3      | 48264  | 6.12%      |
 | 2      | 18805  | 2.38%      |
 | 1      | 39205  | 4.97%      |
+
 </center>
 
 In the [Results](#results) section, we used 66.94% as the baseline accuracy for our models, which corresponds to always predicting 5 stars.
