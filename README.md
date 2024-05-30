@@ -37,9 +37,10 @@ This project utilizes Natural Language Processing (NLP) and Machine Learning (ML
 - `erdos_company_discourse.yml`: project environment
 
 ## Installation & Usage /Reproducability
-The final models for the project are stored in the folder `models`. To apply them to reviews you need to:
+The final models for the project are stored in the [`models`](https://github.com/dhk628/erdos-companydiscourse/tree/main/models) folder. To apply them to reviews you need to:
 1. Vectorize a list of reviews using `SentenceTransformer("thenlper/gte-large").encode(reviews)` from the package [sentence-transformers](https://www.sbert.net/).
 2. Load one of the models and apply `model.predict(review_vectors)` to the corresponding vector list.
+
 To reproduce the training and testing done for this project you need to:
 1. Download the complete review data from [Google Reviews Data](https://datarepo.eng.ucsd.edu/mcauley_group/gdrive/googlelocal/) to the folder `data/raw/` (omitted in the GitHub repo due to file size).
 2. Run `google_preprocessing.ipynb` to extract the reviews of your target company (Costco in our case).
