@@ -1,5 +1,9 @@
 # erdos-companydiscourse
-There is a wealth of discourse on companies and their products on social media platforms and online forums. While many approaches leverage analytical techniques to gauge audience sentiment through online discourse, they lack the ability to be both targeted and customizable while maintaining complex analytical integrity. 
+There is a wealth of discourse on companies and their products on social media platforms and online forums. While many approaches leverage analytical techniques to gauge audience sentiment through online discourse, they lack the ability to be both targeted and customizable while maintaining complex analytical integrity.
+<center>
+<img src="images/figure1.png" width="100%"></img>
+</center> 
+
 ## Table of Contents
 - [Project Title](#project-title)
 - [Table of Contents](#table-of-contents)
@@ -38,13 +42,9 @@ This project utilizes Natural Language Processing (NLP) and Machine Learning (ML
 - Reddit Thread Data 
 
 <center>
-<img src="Images/PCA picture.png" width="50%"></img>
+<img src="images/figure2.png" width="100%"></img>
 </center> 
 
-### Distribution of Data
-<center>
-<img src="Images/Imbalance picture.png" width="50%"></img>
-</center>
 
 ## Models  
 We modeled the data useing the following models: 
@@ -54,29 +54,16 @@ We modeled the data useing the following models:
 - [Support Vector Machine for Classification](#support-vector-machine-for-classification)
 - [XGBoost Classifier](#xgboost-classifier)
 - [Feedforward Neural Network](#feedforward-neural-network)
-### Baseline Model
-[insert text]
-[insert visualization]
+### Results & Model Comparison 
+#### Accuracy
+<center>
+<img src="images/model_comparison_accuracy.png" width="100%"></img>
+</center> 
 
-### Logistic Regression
-[insert text]
-[insert visualization]
-
-### K-Nearest Neighbors
-[insert text]
-[insert visualization]
-
-### Support Vector Machine for Classification
-[insert text]
-[insert visualization]
-
-### XGBoost Classifier 
-[insert text]
-[insert visualization]
-
-### Feedforward Neural Network
-[insert text]
-[insert visualization]
+#### Cross Entropy
+<center>
+<img src="images/model_comparison_ce.png" width="100%"></img>
+</center> 
 
 
 
