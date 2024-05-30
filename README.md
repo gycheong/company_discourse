@@ -57,12 +57,13 @@ We modeled the data useing the following models:
 ### Results & Model Comparison 
 #### Accuracy
 <center>
-<img src="images/model_comparison_accuracy.pdf" width="60%"></img>
+<img src="images/model_comparison_accuracy.svg" width="60%"></img>
 </center> 
 
 #### Cross Entropy
-<iframe src="images/model_comparison_ce.pdf" width="100%" height="500px"></iframe>
-
+<center>
+<img src="images/model_comparison_ce.svg" width="60%"></img>
+</center> 
 
 
 
