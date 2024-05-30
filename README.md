@@ -5,8 +5,7 @@ There is a wealth of discourse on companies and their products on social media p
 - [Table of Contents](#table-of-contents)
 - [Project Description](#description)
 - [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
+- [Installation & Usage /Reproducability](#installation--usage-reproducability)
 - [Data](#data)
 - [Models](#models)
 - [Results](#results)
@@ -14,7 +13,7 @@ There is a wealth of discourse on companies and their products on social media p
 - [License](#license)
 
 ## Project Description 
-This project utilizes Natural Language Processing (NLP) and Machine Learning (ML) techniques to construct predictive models capable of assessing and rating comments provided by consumers. By employing these advanced analytical methods, we aim to enhance the accuracy and effectiveness of sentiment analysis in understanding and forecasting consumer behavior. **To view a detailed description of the entire project**, please run the [full notebook](https://github.com/dhk628/erdos-companydiscourse/blob/main/final%20notebook.ipynb)
+This project utilizes Natural Language Processing (NLP) and Machine Learning (ML) techniques to construct predictive models capable of assessing and rating comments provided by consumers for a **target company**. In this project we used [Costco](https://www.costco.com/) as the target company. By employing these advanced analytical methods, we aim to enhance the accuracy and effectiveness of sentiment analysis in understanding and forecasting consumer behavior. **To view a detailed description of the entire project for Costco as the target company **, please run the [full notebook](https://github.com/dhk628/erdos-companydiscourse/blob/main/final%20notebook.ipynb)
 
 
 
@@ -35,7 +34,7 @@ This project utilizes Natural Language Processing (NLP) and Machine Learning (ML
 
 ## Data 
 ### Overview
-- [Google Reviews Data](https://datarepo.eng.ucsd.edu/mcauley_group/gdrive/googlelocal/) 
+- [Google Reviews Data](https://datarepo.eng.ucsd.edu/mcauley_group/gdrive/googlelocal/) costco only.
 - Reddit Thread Data 
 
 <center>
