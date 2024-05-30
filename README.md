@@ -54,29 +54,14 @@ We modeled the data useing the following models:
 - [Support Vector Machine for Classification](#support-vector-machine-for-classification)
 - [XGBoost Classifier](#xgboost-classifier)
 - [Feedforward Neural Network](#feedforward-neural-network)
-### Baseline Model
-[insert text]
-[insert visualization]
+### Results & Model Comparison
+<center>
+<img src="images/model_comparison_accuracy.png" width="100%"></img>
+</center> 
 
-### Logistic Regression
-[insert text]
-[insert visualization]
-
-### K-Nearest Neighbors
-[insert text]
-[insert visualization]
-
-### Support Vector Machine for Classification
-[insert text]
-[insert visualization]
-
-### XGBoost Classifier 
-[insert text]
-[insert visualization]
-
-### Feedforward Neural Network
-[insert text]
-[insert visualization]
+<center>
+<img src="images/model_comparison_ce.png" width="100%"></img>
+</center> 
 
 
 
