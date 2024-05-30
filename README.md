@@ -1,7 +1,7 @@
 # erdos-companydiscourse
 There is a wealth of discourse on companies and their products on social media platforms and online forums. While many approaches leverage analytical techniques to gauge audience sentiment through online discourse, they lack the ability to be both targeted and customizable while maintaining complex analytical integrity.
 <center>
-<img src="images/figure1.png" width="90%"></img>
+<img src="images/figure1.png" width="100%"></img>
 </center> 
 
 ## Table of Contents
@@ -42,7 +42,7 @@ This project utilizes Natural Language Processing (NLP) and Machine Learning (ML
 - Reddit Thread Data 
 
 <center>
-<img src="images/figure2.png" width="90%"></img>
+<img src="images/figure2.png" width="100%"></img>
 </center> 
 
 
