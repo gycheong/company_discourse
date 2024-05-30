@@ -1,8 +1,9 @@
 # erdos-companydiscourse
+<img src="images/SVG/figure1.svg" width="100%"></img>
 There is a wealth of discourse on companies and their products on social media platforms and online forums. While many approaches leverage analytical techniques to gauge audience sentiment through online discourse, they lack the ability to be both targeted and customizable while maintaining complex analytical integrity.
 <center>
-<img src="images/SVG/figure1.svg" width="100%"></img>
 </center>
+
 
 ## Table of Contents
 - [Project Title](#project-title)
@@ -17,7 +18,7 @@ There is a wealth of discourse on companies and their products on social media p
 - [License](#license)
 
 ## Project Description
-This project utilizes Natural Language Processing (NLP) and Machine Learning (ML) techniques to construct predictive models capable of assessing and rating comments provided by consumers for a **target company**. In this project we used [Costco](https://www.costco.com/) as the target company. By employing these advanced analytical methods, we aim to enhance the accuracy and effectiveness of sentiment analysis in understanding and forecasting consumer behavior. **To view a detailed description of the entire project for Costco as the target company **, please run the [full notebook](https://github.com/dhk628/erdos-companydiscourse/blob/main/final%20notebook.ipynb)
+This project utilizes Natural Language Processing (NLP) and Machine Learning (ML) techniques to construct predictive models capable of assessing and rating comments provided by consumers for a **target company**. In this project we used [Costco](https://www.costco.com/) as the target company. By employing these advanced analytical methods, we aim to enhance the accuracy and effectiveness of sentiment analysis in understanding and forecasting consumer behavior. **To view a detailed description of the entire project for Costco as the target company**, please run the [full jupyter notebook](https://github.com/dhk628/erdos-companydiscourse/blob/main/final%20notebook.ipynb)
 
 
 
@@ -54,12 +55,12 @@ We used the dataset [Google Reviews Data](https://datarepo.eng.ucsd.edu/mcauley_
 
 ## Models
 We modeled the data useing the following models:
-- [Baseline Model](#baseline-model)
-- [Logistic Regression](#logistic-regression)
-- [K-Nearest Neighbors](#k-nearest-neighbors)
-- [Support Vector Machine for Classification](#support-vector-machine-for-classification)
-- [XGBoost Classifier](#xgboost-classifier)
-- [Feedforward Neural Network](#feedforward-neural-network)
+- [Baseline Model](https://github.com/dhk628/erdos-companydiscourse/tree/main/models)
+- [Logistic Regression](https://github.com/dhk628/erdos-companydiscourse/tree/main/models)
+- [K-Nearest Neighbors](https://github.com/dhk628/erdos-companydiscourse/tree/main/models)
+- [Support Vector Machine for Classification](https://github.com/dhk628/erdos-companydiscourse/tree/main/models)
+- [XGBoost Classifier](https://github.com/dhk628/erdos-companydiscourse/tree/main/models)
+- [Feedforward Neural Network](https://github.com/dhk628/erdos-companydiscourse/tree/main/models)
 ### Results & Model Comparison
 #### Accuracy
 <center>
