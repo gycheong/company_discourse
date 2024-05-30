@@ -62,7 +62,7 @@ We modeled the data useing the following models:
 
 #### Cross Entropy
 <center>
-<img src="images/model_comparision_ce.png" width="100%"></img>
+<img src="images/model_comparison_ce.png" width="100%"></img>
 </center> 
 
 
