@@ -1,5 +1,5 @@
 # erdos-companydiscourse
-<img src="images/SVG/figure1.svg" width="100%"></img>
+<img src="images/SVG/figure2.svg" width="100%"></img>
 There is a wealth of informoation in the discourse on companies and their products on social media platforms and online forums. This project maintains computationally effiency, while factoring in context and maintining complex analytical integrity in gauging audience sentiment through online discourse. 
 
 Full information of this project can be found in the final [Jupyter notebook](final_notebook.ipynb).
