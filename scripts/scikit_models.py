@@ -35,11 +35,15 @@ def balance_and_fit(indep, dep, model, balancing=None, balancing2=None):
     return model.fit(indep_resampled, dep_resampled)
 
 
-def save_models_kfold(indep, dep,
-                      model, model_appendix='',
-                      pca_dim=0,
-                      balancing=None, balancing_appendix='',
-                      balancing2=None, balancing2_appendix=''):
+def save_models_kfold(indep,
+                      dep,
+                      model,
+                      model_appendix='',  # appendix to model name
+                      pca_dim=0,  # 0 means PCA is not used
+                      balancing=None,
+                      balancing_appendix='',  # appendix to balancing name
+                      balancing2=None,
+                      balancing2_appendix=''):  # appendix to balancing2 name
     kfold = StratifiedKFold(n_splits=N_SPLITS,
                             shuffle=True,
                             random_state=RANDOM_SEED)
@@ -98,6 +102,7 @@ def load_models(model_name, balancing_name=None):
     return models
 
 
+# Export the RMSE, MSE, MAE, accuracy, and log loss to a CSV file and the confusion matrix to a PNG file
 def evaluate_classification(indep, dep, model_name, pca_dim=0, balancing_name='', file_appendix=''):
     kfold = StratifiedKFold(n_splits=N_SPLITS,
                             shuffle=True,
