@@ -1,8 +1,8 @@
-# erdos-companydiscourse
+# Company Discourse
 <img src="images/SVG/figure1.svg" width="100%"></img>
 There is a wealth of information in the discourse on companies and their products on social media platforms and online forums. This project aims to build and train ML models to predict google star reviews from google text reviews for a target company. This approach is computationally efficient, while maintaining contextual integrity in the data and leveraging complex analytical techniques to gauge audience sentiment through online discourse. 
 
-**To view a detailed description of the entire project for Costco as the target company**, please see our [final Jupyter notebook](https://github.com/dhk628/erdos-companydiscourse/blob/main/final_notebook.ipynb).
+**To view a detailed description of the entire project**, please see our [final Jupyter notebook](https://github.com/dhk628/erdos-companydiscourse/blob/main/final_notebook.ipynb).
 <center>
 </center>
 
@@ -48,7 +48,7 @@ To reproduce the training and testing done for this project you need to:
 ### Overview
 We used the dataset [Google Local Data](https://datarepo.eng.ucsd.edu/mcauley_group/gdrive/googlelocal/) to train our models. This dataset includes all Google Maps reviews from 2021 in the United States, up to September 2021. We extracted all reviews associated with a Costco location (usually there is more than one Google Map ID for each Costco warehouse), and we excluded all reviews that were not in English. We did not alter the review text in any way before vectorizing.
 
-After exclusions, the dataset includes 788766 reviews from 2473 unique Google Maps locations. The data is heavily biased towards 5 stars, with the distribution being:
+After exclusions, the dataset includes 788766 reviews from 2473 unique Google Maps locations. We use 80% of it as our training data and the rest as test data. The training data is heavily biased towards 5 stars, with the distribution being:
 
 <center>
 
@@ -68,6 +68,8 @@ In the [Results](#results) section, we used 66.94% as the baseline accuracy for 
 <img src="images/SVG/figure2.svg" width="100%"></img>
 </center>
 
+* A: the scatter plot of our training set projected on the first and second principal components
+* B: the histogram for ratings in our testing set
 
 ## Models
 We modeled the data using the following models:
@@ -90,13 +92,13 @@ We modeled the data using the following models:
 
 
 ## Contributing
-- [Vinicius Ambrosi](personalWebsiteLink)(![Github](http://i.imgur.com/9I6NRUm.png):
+- [Vinicius Ambrosi](https://www.linkedin.com/in/vinicius-ambrosi/) (![Github](http://i.imgur.com/9I6NRUm.png):
     [vambrosi](https://github.com/vambrosi))
-- [Gilyoung Cheong](personalWebsiteLink)(![Github](http://i.imgur.com/9I6NRUm.png):
+- [Gilyoung Cheong](https://www.linkedin.com/in/gycheong/) (![Github](http://i.imgur.com/9I6NRUm.png):
     [gycheong](https://github.com/gycheong))
-- [Dohoon Kim](personalWebsiteLink)(![Github](http://i.imgur.com/9I6NRUm.png):
+- [Dohoon Kim](https://www.linkedin.com/in/dohoonkim95/) (![Github](http://i.imgur.com/9I6NRUm.png):
     [dhk628](https://github.com/dhk628))
-- [Hannah Lloyd](https://hslloyd.github.io/)(![Github](http://i.imgur.com/9I6NRUm.png):
+- [Hannah Lloyd](https://www.linkedin.com/in/hslloyd/) (![Github](http://i.imgur.com/9I6NRUm.png):
     [hslloyd](https://github.com/hslloyd))
 
 
