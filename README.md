@@ -1,8 +1,8 @@
 # erdos-companydiscourse
 <img src="images/SVG/figure1.svg" width="100%"></img>
-There is a wealth of informoation in the discourse on companies and their products on social media platforms and online forums. This project aims to build and train ML models to predict google star reviews from gogle text reviews for a target company. This approach is computationally efficient, while aintining contextual intregrety in the data and leveraging complex analytical technique to gauge audience sentiment through online discourse. 
+There is a wealth of informoation in the discourse on companies and their products on social media platforms and online forums. This project aims to build and train ML models to predict google star reviews from gogle text reviews for a target company. This approach is computationally efficient, while maintining contextual intregrety in the data and leveraging complex analytical technique to gauge audience sentiment through online discourse. 
 
-Full information of this project can be found in the final [Jupyter notebook](final_notebook.ipynb).
+**To view a detailed description of the entire project for Costco as the target company**, please see our [final Jupyter notebook](https://github.com/dhk628/erdos-companydiscourse/blob/main/final_notebook.ipynb).
 <center>
 </center>
 
@@ -20,16 +20,13 @@ Full information of this project can be found in the final [Jupyter notebook](fi
 - [License](#license)
 
 ## Project Description
-This project utilizes Natural Language Processing (NLP) and Machine Learning (ML) techniques to construct predictive models capable of assessing and rating comments provided by consumers for a **target company**. In this project we used [Costco](https://www.costco.com/) as the target company. By employing these advanced analytical methods, we aim to enhance the accuracy and effectiveness of sentiment analysis in understanding and forecasting consumer behavior. **To view a detailed description of the entire project for Costco as the target company**, please run the [full jupyter notebook](https://github.com/dhk628/erdos-companydiscourse/blob/main/final_notebook.ipynb)
+This project utilizes Natural Language Processing (NLP) and Machine Learning (ML) techniques to construct predictive models capable of assessing and rating comments provided by consumers for a **target company**. In this project we used [Costco](https://www.costco.com/) as the target company. By employing these advanced analytical methods, we aim to enhance the accuracy and effectiveness of sentiment analysis in understanding and forecasting consumer behavior.
 
 
 
 ## Project Structure
-- `data/`: **Omitted** in the GitHub repo due to file size.
-  - `raw/`: Contains raw scraped data.
-  - `processed/`: Contains processed data ready for analysis.
 - `notebooks/`: Jupyter notebooks for exploratory data analysis, preprocessing, vectorization, model training, and evaluation.
-- `notebooks/final_notebook.ipynb` jupyter notebook with full description of data analysis and results
+- `final_notebook.ipynb` jupyter notebook with full description of data analysis and results
 - `scripts/`: Python scripts for data collection, preprocessing, vectorization, model training, and evaluation.
 - `models/`: Directory to store trained models.
 - `.gitignore`: Files and directories to be ignored by git.
