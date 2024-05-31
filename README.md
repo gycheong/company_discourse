@@ -1,6 +1,6 @@
 # erdos-companydiscourse
 <img src="images/SVG/figure1.svg" width="100%"></img>
-There is a wealth of discourse on companies and their products on social media platforms and online forums. While many approaches leverage analytical techniques to gauge audience sentiment through online discourse, they lack the ability to be both targeted and customizable while maintaining complex analytical integrity.
+There is a wealth of discourse on companies and their products on social media platforms and online forums. While many approaches leverage analytical techniques to gauge audience sentiment through online discourse, they lack the ability to be both computationally efficient while factoring in context and maintining complex analytical integrity.
 
 Full information of this project can be found in the final [Jupyter notebook](final_notebook.ipynb).
 <center>
