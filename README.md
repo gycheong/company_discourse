@@ -31,11 +31,11 @@ There is a wealth of information in the discourse on companies and their product
 - [References](#references)
 
 ## Project Description
-This project utilizes Natural Language Processing (NLP) and ML techniques to construct predictive models capable of assessing and rating comments provided by consumers for a **target company**. In this project we used [Costco](https://www.costco.com/) as the target company. By employing these advanced analytical methods, we aim to enhance the accuracy and effectiveness of sentiment analysis in understanding and forecasting consumer behavior.
+This project utilizes natural language processing (NLP) and ML techniques to construct predictive models capable of assessing and rating comments provided by consumers for a **target company**. In this project we used [Costco](https://www.costco.com/) as the target company. By employing these advanced analytical methods, we aim to enhance the accuracy and effectiveness of sentiment analysis in understanding and forecasting consumer behavior.
 
 ## Motivation
 
-Online comments and reviews have grown increasingly vital in shaping consumer decisions, particularly in the aftermath of the COVID-19 pandemic. Numerous studies, including [[1]](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2022.865702/full), [[3]](https://link.springer.com/chapter/10.1007/978-981-19-5443-6_1), [[8]](https://ieeexplore.ieee.org/document/8970492), [[9]](https://www.sciencedirect.com/science/article/pii/S0747563210000907), [[10]](https://ieeexplore.ieee.org/document/8631160), and [[11]](https://www.sciencedirect.com/science/article/abs/pii/S1567422320300570), have underscored the significance of analyzing consumer sentiments within the realms of e-commerce and tourism. The importance of these sentiments has been highlighted, showing that understanding consumer feedback can provide valuable insights into market trends and customer preferences. In light of these findings, this project utilizes NLP and ML techniques to construct predictive models capable of assessing and rating comments provided by consumers. By employing these advanced analytical methods, we aim to enhance the correctness and effectiveness of sentiment analysis in understanding and forecasting consumer behavior.
+Online comments and reviews have grown increasingly vital in shaping consumer decisions, particularly in the aftermath of the COVID-19 pandemic. Numerous studies, including [[1]](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2022.865702/full), [[3]](https://link.springer.com/chapter/10.1007/978-981-19-5443-6_1), [[8]](https://ieeexplore.ieee.org/document/8970492), [[9]](https://www.sciencedirect.com/science/article/pii/S0747563210000907), [[10]](https://ieeexplore.ieee.org/document/8631160), and [[11]](https://www.sciencedirect.com/science/article/abs/pii/S1567422320300570), have underscored the significance of analyzing consumer sentiments within the realms of e-commerce and tourism. The importance of these sentiments has highlighted that understanding consumer feedback can provide valuable insights into market trends and customer preferences. In light of these findings, this project utilizes NLP and ML techniques to construct predictive models capable of assessing and rating comments provided by consumers. By employing these advanced analytical methods, we aim to enhance the correctness and effectiveness of sentiment analysis in understanding and forecasting consumer behavior.
 
 ## Project Structure
 - `notebooks/`: Jupyter notebooks for exploratory data analysis, preprocessing, vectorization, model training, and evaluation
@@ -55,14 +55,14 @@ The final models for the project are stored in the [`models`](https://github.com
 To reproduce the training and testing done for this project you need to:
 1. Download the complete review data from [Google Reviews Data](https://datarepo.eng.ucsd.edu/mcauley_group/gdrive/googlelocal/) to the folder `data/raw/` (omitted in the GitHub repo due to file size).
 2. Run `google_preprocessing.ipynb` to extract the reviews of your target company (Costco in our case).
-3. `sbert_vectorizing.py` contains the necessary code to vectorize and store the reviews.
+3. Vectorize and store the reviews using `sbert_vectorizing.py`.
 4. Use `scikit_models.py` to train scikit-learn models, and `xgboost_training.ipynb` and `neural_network_implementation.ipynb` to train the respective models.
 
 ## Exploratory Data Analysis
 ### Overview
 We used the dataset [Google Local Data](https://datarepo.eng.ucsd.edu/mcauley_group/gdrive/googlelocal/) to train our models. This dataset includes all Google Maps reviews from 2021 in the United States, up to September 2021. We extracted all reviews associated with a Costco location (usually there is more than one Google Map ID for each Costco warehouse), and we excluded all reviews that were not in English. We did not alter the review text in any way before vectorizing.
 
-After exclusions, the dataset includes 788766 reviews from 2473 unique Google Maps locations. We use [Sentence Transformers](https://sbert.net/), a state-of-the-art text embedding NLP, to vectorize the reviews. These vectors then serve as input features for building predictive models for ratings. The pre-trained model for our sentence transformer is GTE (General Text Embeddings with Multi-stage Contrastive Learning) developed by Alibaba Group NLP team in [[5]](https://arxiv.org/abs/2308.03281).
+After exclusions, the dataset includes 788,766 reviews from 2,473 unique Google Maps locations. We use [Sentence Transformers](https://sbert.net/), a state-of-the-art text embedding NLP, to vectorize the reviews. These vectors then serve as input features for building predictive models for ratings. The pre-trained model for our sentence transformer is GTE (General Text Embeddings with Multi-stage Contrastive Learning) developed by Alibaba Group NLP team in [[5]](https://arxiv.org/abs/2308.03281).
 
 We use 80% of the review vectors with ratings as our training data and the rest as test data. The training data is heavily biased towards 5 stars, with the distribution being:
 
@@ -98,7 +98,7 @@ We used 66.94% as the baseline accuracy for our models, which corresponds to alw
 
 ## Model Performances
 
-### Models with Original Sampling (imbalanced training data)
+### Models with Original Sampling (Imbalanced Training Data)
 
 | No Undersampling | baseline | log reg |   kNN  | XGBoost |   FNN  |
 |:----------------:|:--------:|:-------:|:------:|:-------:|:------:|
@@ -108,7 +108,7 @@ We used 66.94% as the baseline accuracy for our models, which corresponds to alw
 
 **Remark**. kNN is with 50 neighbors and PCA with 16 components.
 
-### Models with Random Undersampling (balanced training data)
+### Models with Random Undersampling (Balanced Training Data)
 
 | Random Undersampling | baseline | log reg |   kNN  |   SVM  | XGBoost |   FNN  |
 |:--------------------:|:--------:|:-------:|:------:|:------:|:-------:|:------:|
@@ -120,12 +120,12 @@ We used 66.94% as the baseline accuracy for our models, which corresponds to alw
 
 Above, **Correlation** means correlation of rows and columns of normalized confusion matrix (see "normalized correlation" in $\S2$ of our [final notebook](https://github.com/dhk628/erdos-companydiscourse/blob/main/final_notebook.ipynb) for more details).
 
-### Accuracy Plotting
+### Accuracy Plot
 <center>
 <img src="images/SVG/model_comparison_accuracy.svg" width="60%"></img>
 </center>
 
-### Cross Entropy Plotting
+### Cross Entropy Plot
 <center>
 <img src="images/SVG/model_comparison_ce.svg" width="60%"></img>
 </center>
@@ -160,7 +160,7 @@ In this project, we used GTE Sentence Transformers to vectorize the text of Goog
 
 ## Future Directions
 
-There are several avenues by which this project can be further investigated. Firstly, we could consider other metrics that are more suited for imbalanced data, such as the geometric mean or the Area Under the Receiver Operating Characteristic Curve (ROC AUC). Furthermore, we could employ other undersampling or oversampling methods, although many of these come with a significantly higher computational cost than randomly undersampling. The choice of sentence transformer, i.e. using a pre-trained vectorization model other than GTE, could also affect our results. Finally, we could train and test unsupervised models using text data with no ratings, for example, comments on Reddit.
+There are several avenues by which this project can be further investigated. Firstly, we could consider other metrics that are more suited for imbalanced data, such as the geometric mean or the Area Under the Receiver Operating Characteristic Curve (ROC AUC). Furthermore, we could employ other undersampling or oversampling methods, although many of these come with a significantly higher computational cost than randomly undersampling. The choice of sentence transformer, i.e., using a pre-trained vectorization model other than GTE, could also affect our results. Finally, we could train and test unsupervised models using text data with no ratings, for example, comments on Reddit.
 
 ## References
 
