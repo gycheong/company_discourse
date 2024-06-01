@@ -22,7 +22,7 @@ There is a wealth of information in the discourse on companies and their product
 - [Project Structure](#project-structure)
 - [Installation, Usage, and Reproducability](#installation-usage-and-reproducability)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Results & Model Comparison](#results-and-model-comparison)
+- [Results and Model Comparison](#results-and-model-comparison)
 - [References](#references)
 
 ## Project Description
@@ -88,7 +88,7 @@ We used 66.94% as the baseline accuracy for our models, which corresponds to alw
 * **A**: the scatter plot of our training set projected on the first and second principal components
 * **B**: the histogram for ratings in our testing set
 
-### Results & Model Comparison
+### Results and Model Comparison
 #### Accuracy
 <center>
 <img src="images/SVG/model_comparison_accuracy.svg" width="60%"></img>
