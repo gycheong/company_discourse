@@ -86,9 +86,9 @@ We used 66.94% as the baseline accuracy for our models, which corresponds to alw
 * **A**: the scatter plot of our training set projected on the first and second principal components: note the *imbalance* in our data
 * **B**: the histogram for ratings in our testing set
 
-### Model Performances
+## Model Performances
 
-#### Models with Original Sampling (imblanced training data)
+### Models with Original Sampling (imblanced training data)
 
 | No Undersampling | baseline | log reg |   kNN  | XGBoost |   FNN  |
 |:----------------:|:--------:|:-------:|:------:|:-------:|:------:|
@@ -98,7 +98,7 @@ We used 66.94% as the baseline accuracy for our models, which corresponds to alw
 
 **Remark**. kNN is with 50 neighbors and PCA with 16 components.
 
-#### Models with Random Undersampling (blanced training data)
+### Models with Random Undersampling (blanced training data)
 
 | Random Undersampling | baseline | log reg |   kNN  |   SVM  | XGBoost |   FNN  |
 |:--------------------:|:--------:|:-------:|:------:|:------:|:-------:|:------:|
@@ -110,17 +110,17 @@ We used 66.94% as the baseline accuracy for our models, which corresponds to alw
 
 Above, **Correlation** means correlation of rows and columns of normalized confusion matrix (see "noramlized correlation" in $\S2$ of our [final notebook](https://github.com/dhk628/erdos-companydiscourse/blob/main/final_notebook.ipynb) for more details).
 
-#### Accuracy
+### Accuracy Plotting
 <center>
 <img src="images/SVG/model_comparison_accuracy.svg" width="60%"></img>
 </center>
 
-#### Cross Entropy
+### Cross Entropy Plotting
 <center>
 <img src="images/SVG/model_comparison_ce.svg" width="60%"></img>
 </center>
 
-#### Best Performance: Logistic Regression
+### Best Performance: Logistic Regression
 
 | Logistic Regression | No Undersampling | Random Undersampling | 
 |:--------------------:|:--------:|:-------:|
@@ -133,7 +133,7 @@ Above, **Correlation** means correlation of rows and columns of normalized confu
 * Outperforming other more convoluted models
 * Undersampling produces a more reasonable prediction for overall ratings $\Rightarrow$ Correlation may be a better evaluation metric
 
-#### Performance on Other Rating Data 
+### Performance on Other Rating Data 
 
 We also test our best perfoming model (Logistic Regression) on the rating data that we scraped from Costco's website, which is an entirely different source from our training data (i.e., Google Reviews). These are 8621 review comments with ratings. We use the same model that was built before without extra training, and we vectorize all 8621 comments to use them as extra test data.
 
@@ -143,6 +143,14 @@ We also test our best perfoming model (Logistic Regression) on the rating data t
 | Accuracy | 0.7989 | 0.7404 |
 | Cross Entropy | 0.5493 | 0.7486 |
 | Correlation | 0.6679 | 0.8201 |
+
+## Conclusion
+
+In this project, we used GTE Sentence Transformers to vectorize the text of Google reviews, which we then used to predict the corresponding star rating. Due to the imbalanced nature of our data, accuracy was not deemed to be the best metric to evaluate our models. We instead also consider the cross entropy loss and the normalized correlation of the confusion matrices. Logistic regression, k-nearest neighbors, support vector classification, XGBoost, and feedforward neural networks all had lower cross entropy than the baseline when trained with the original data. We were able to significantly improve the normalized correlation by randomly undersampling the training data. However, across all models, this came with the cost of higher cross entropy and lower accuracy than those obtained by training on the original data. In both approaches, our models perform well--even for data from other sources--without the need to train the vectorization, signicantly reducing the computational cost for users.
+
+## Future Directions
+
+There are several avenues by which this project can be futher investigated. Firstly, we could consider other metrics that are more suited for imbalanced data, such as the geometric mean or the Area Under the Receiver Operating Characteristic Curve (ROC AUC). Furthermore, we could employ other undersampling or oversampling methods, although many of these come with a significantly higher computational cost than randomly undersampling. The choice of sentence transformer, i.e. using a pre-trained vectorization model other than GTE, could also affect our results. Finally, we could train and test unsupervised models using text data with no ratings, for example, comments on Reddit.
 
 ## References
 
