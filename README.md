@@ -18,7 +18,8 @@ There is a wealth of information in the discourse on companies and their product
 
 
 ## Table of Contents
-- [Project Description](#description)
+- [Project Description](#project-description)
+- [Motivation](#motivation)
 - [Project Structure](#project-structure)
 - [Installation, Usage, and Reproducability](#installation-usage-and-reproducability)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
@@ -29,6 +30,10 @@ There is a wealth of information in the discourse on companies and their product
 
 ## Project Description
 This project utilizes Natural Language Processing (NLP) and ML techniques to construct predictive models capable of assessing and rating comments provided by consumers for a **target company**. In this project we used [Costco](https://www.costco.com/) as the target company. By employing these advanced analytical methods, we aim to enhance the accuracy and effectiveness of sentiment analysis in understanding and forecasting consumer behavior.
+
+## Motivation
+
+Online comments and reviews have grown increasingly vital in shaping consumer decisions, particularly in the aftermath of the COVID-19 pandemic. Numerous studies, including [[1]](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2022.865702/full), [[3]](https://link.springer.com/chapter/10.1007/978-981-19-5443-6_1), [[8]](https://ieeexplore.ieee.org/document/8970492), [[9]](https://www.sciencedirect.com/science/article/pii/S0747563210000907), [[10]](https://ieeexplore.ieee.org/document/8631160), and [[11]](https://www.sciencedirect.com/science/article/abs/pii/S1567422320300570), have underscored the significance of analyzing consumer sentiments within the realms of e-commerce and tourism. The importance of these sentiments has been highlighted, showing that understanding consumer feedback can provide valuable insights into market trends and customer preferences. In light of these findings, this project utilizes NLP and ML techniques to construct predictive models capable of assessing and rating comments provided by consumers. By employing these advanced analytical methods, we aim to enhance the correctness and effectiveness of sentiment analysis in understanding and forecasting consumer behavior.
 
 ## Project Structure
 - `notebooks/`: Jupyter notebooks for exploratory data analysis, preprocessing, vectorization, model training, and evaluation
