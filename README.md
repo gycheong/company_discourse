@@ -145,7 +145,7 @@ Above, **Correlation** means correlation of rows and columns of normalized confu
 
 ### Performance on Other Rating Data 
 
-We also test our best perfoming model (Logistic Regression) on the rating data that we scraped from Costco's website, which is an entirely different source from our training data (i.e., Google Reviews). These are 8621 review comments with ratings. We use the same model that was built before without extra training, and we vectorize all 8621 comments to use them as extra test data.
+We also test our best performing model (Logistic Regression) on the rating data that we scraped from Costco's website, which is an entirely different source from our training data (i.e., Google Reviews). These are 8621 review comments with ratings. We use the same model that was built before without extra training, and we vectorize all 8621 comments to use them as extra test data.
 
 | Testing on New Data | No Undersampling | Random Undersampling | 
 |:--------------------:|:--------:|:-------:|
