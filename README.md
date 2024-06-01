@@ -42,7 +42,7 @@ To reproduce the training and testing done for this project you need to:
 1. Download the complete review data from [Google Reviews Data](https://datarepo.eng.ucsd.edu/mcauley_group/gdrive/googlelocal/) to the folder `data/raw/` (omitted in the GitHub repo due to file size).
 2. Run `google_preprocessing.ipynb` to extract the reviews of your target company (Costco in our case).
 3. `sbert_vectorizing.py` contains the necessary code to vectorize and store the reviews.
-4. Use `xgboost_training.ipynb` and `neural_network_implementation.ipynb` to train the respective models.
+4. Use `scikit_models.py` to train scikit-learn models, and `xgboost_training.ipynb` and `neural_network_implementation.ipynb` to train the respective models.
 
 ## Data
 ### Overview
