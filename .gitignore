@@ -11,4 +11,3 @@ costco_2021_reviews_filtered_vectorized_master_en_32_no_duplicates.parquet
 Old/
 Models/*.pkl
 costco_2021_reviews_filtered_vectorized_final.parquet
-.vscode
