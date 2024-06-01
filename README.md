@@ -45,6 +45,7 @@ Online comments and reviews have grown increasingly vital in shaping consumer de
 - `.gitignore`: Files and directories to be ignored by git
 - `README.md`: Project documentation and instructions
 - `erdos_company_discourse.yml`: Project environment
+- `presentation_slides.pdf` : Presentation slides
 
 ## Installation, Usage, and Reproducability
 The final models for the project are stored in the [`models`](https://github.com/dhk628/erdos-companydiscourse/tree/main/models) folder. The model for support vector classification is large and is stored in [Google Drive](https://drive.google.com/file/d/1lqYpduA7rfBSZCMB_yUyadeiGKJsFb9B/view?usp=sharing). To apply them to reviews you need to:
