@@ -1,6 +1,6 @@
 # Company Discourse
 <img src="images/SVG/figure1.svg" width="100%"></img>
-There is a wealth of information in the discourse on companies and their products on social media platforms and online forums. This project aims to build and train ML models to predict google star reviews from google text reviews for a target company. This approach is computationally efficient, while maintaining contextual integrity in the data and leveraging complex analytical techniques to gauge audience sentiment through online discourse. 
+There is a wealth of information in the discourse on companies and their products on social media platforms and online forums. This project aims to build and train Machine Learning (ML) models to predict google star reviews from google text reviews for a target company. This approach is computationally efficient, while maintaining contextual integrity in the data and leveraging complex analytical techniques to gauge audience sentiment through online discourse. 
 
 **To view a detailed description of the entire project**, please see our [final Jupyter notebook](https://github.com/dhk628/erdos-companydiscourse/blob/main/final_notebook.ipynb).
 <center>
@@ -8,11 +8,10 @@ There is a wealth of information in the discourse on companies and their product
 
 
 ## Table of Contents
-- [Project Title](#project-title)
 - [Table of Contents](#table-of-contents)
 - [Project Description](#description)
 - [Project Structure](#project-structure)
-- [Installation & Usage /Reproducability](#installation--usage-reproducability)
+- [Installation & Usage / Reproducability](#installation-&-usage-/-reproducability)
 - [Data](#data)
 - [Models](#models)
 - [Results](#results)
@@ -20,20 +19,20 @@ There is a wealth of information in the discourse on companies and their product
 - [License](#license)
 
 ## Project Description
-This project utilizes Natural Language Processing (NLP) and Machine Learning (ML) techniques to construct predictive models capable of assessing and rating comments provided by consumers for a **target company**. In this project we used [Costco](https://www.costco.com/) as the target company. By employing these advanced analytical methods, we aim to enhance the accuracy and effectiveness of sentiment analysis in understanding and forecasting consumer behavior.
+This project utilizes Natural Language Processing (NLP) and ML techniques to construct predictive models capable of assessing and rating comments provided by consumers for a **target company**. In this project we used [Costco](https://www.costco.com/) as the target company. By employing these advanced analytical methods, we aim to enhance the accuracy and effectiveness of sentiment analysis in understanding and forecasting consumer behavior.
 
 
 
 ## Project Structure
-- `notebooks/`: Jupyter notebooks for exploratory data analysis, preprocessing, vectorization, model training, and evaluation.
-- `final_notebook.ipynb` jupyter notebook with full description of data analysis and results
-- `scripts/`: Python scripts for data collection, preprocessing, vectorization, model training, and evaluation.
-- `models/`: Directory to store trained models.
-- `.gitignore`: Files and directories to be ignored by git.
-- `README.md`: Project documentation and instructions.
+- `notebooks/`: Jupyter notebooks for exploratory data analysis, preprocessing, vectorization, model training, and evaluation
+- `final_notebook.ipynb` Jupyter notebook with full description of data analysis and results
+- `scripts/`: Python scripts for data collection, preprocessing, vectorization, model training, and evaluation
+- `models/`: Directory to store trained models
+- `.gitignore`: Files and directories to be ignored by git
+- `README.md`: Project documentation and instructions
 - `erdos_company_discourse.yml`: project environment
 
-## Installation & Usage /Reproducability
+## Installation & Usage / Reproducability
 The final models for the project are stored in the [`models`](https://github.com/dhk628/erdos-companydiscourse/tree/main/models) folder. The model for support vector classification is large and is stored in [Google Drive](https://drive.google.com/file/d/1lqYpduA7rfBSZCMB_yUyadeiGKJsFb9B/view?usp=sharing). To apply them to reviews you need to:
 1. Vectorize a list of reviews using `SentenceTransformer("thenlper/gte-large").encode(reviews)` from the package [sentence-transformers](https://www.sbert.net/).
 2. Load one of the models and apply `model.predict(review_vectors)` to the corresponding vector list.
