@@ -2,7 +2,7 @@
 ## Finding Numerical Ratings of Consumer Sentiments using GTE Sentence Transformers
 
 <img src="images/SVG/figure1.svg" width="100%"></img>
-There is a wealth of information in the discourse on companies and their products on social media platforms and online forums. This project aims to build and train machine learning (ML) models to predict google star reviews from google text reviews for a target company. This approach is computationally efficient, while maintaining contextual integrity in the data and leveraging complex analytical techniques to gauge audience sentiment through online discourse.
+There is a wealth of information in the discourse on companies and their products on social media platforms and online forums. This project aims to build and train machine learning (ML) models to predict google star reviews from google text reviews for a target company. This approach is computationally efficient while maintaining contextual integrity in the data and leveraging complex analytical techniques to gauge audience sentiment through online discourse.
 
 **To view a detailed description of the entire project**, please see our [final Jupyter notebook](https://github.com/dhk628/erdos-companydiscourse/blob/main/final_notebook.ipynb).
 <center>
@@ -23,7 +23,7 @@ There is a wealth of information in the discourse on companies and their product
 - [Project Description](#project-description)
 - [Motivation](#motivation)
 - [Project Structure](#project-structure)
-- [Installation, Usage, and Reproducability](#installation-usage-and-reproducability)
+- [Installation, Usage, and Reproducibility](#installation-usage-and-reproducibility)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Model Performances](#model-performances)
 - [Conclusion](#conclusion)
@@ -47,7 +47,7 @@ Online comments and reviews have grown increasingly vital in shaping consumer de
 - `erdos_company_discourse.yml`: Project environment
 - `presentation_slides.pdf` : Presentation slides
 
-## Installation, Usage, and Reproducability
+## Installation, Usage, and Reproducibility
 The final models for the project are stored in the [`models`](https://github.com/dhk628/erdos-companydiscourse/tree/main/models) folder. The model for support vector classification is large and is stored in [Google Drive](https://drive.google.com/file/d/1lqYpduA7rfBSZCMB_yUyadeiGKJsFb9B/view?usp=sharing). To apply them to reviews you need to:
 1. Vectorize a list of reviews using `SentenceTransformer("thenlper/gte-large").encode(reviews)` from the package [sentence-transformers](https://www.sbert.net/).
 2. Load one of the models and apply `model.predict(review_vectors)` to the corresponding vector list.
@@ -98,7 +98,7 @@ We used 66.94% as the baseline accuracy for our models, which corresponds to alw
 
 ## Model Performances
 
-### Models with Original Sampling (imblanced training data)
+### Models with Original Sampling (imbalanced training data)
 
 | No Undersampling | baseline | log reg |   kNN  | XGBoost |   FNN  |
 |:----------------:|:--------:|:-------:|:------:|:-------:|:------:|
@@ -108,7 +108,7 @@ We used 66.94% as the baseline accuracy for our models, which corresponds to alw
 
 **Remark**. kNN is with 50 neighbors and PCA with 16 components.
 
-### Models with Random Undersampling (blanced training data)
+### Models with Random Undersampling (balanced training data)
 
 | Random Undersampling | baseline | log reg |   kNN  |   SVM  | XGBoost |   FNN  |
 |:--------------------:|:--------:|:-------:|:------:|:------:|:-------:|:------:|
@@ -116,9 +116,9 @@ We used 66.94% as the baseline accuracy for our models, which corresponds to alw
 |     Cross Entropy    |  1.0877  |  0.9101 | 0.9790 | 0.8823 |  0.9196 | 0.9823 |
 |   Correlation  |  undefined  | 0.8198 | 0.7924 | 0.8144 | 0.7968 | 0.8085  |
 
-**Remark**. kNN is with 200 neighbors and PCA with 128 components; SVM is with rbf kernal and PCA with 128 components.
+**Remark**. kNN is with 200 neighbors and PCA with 128 components; SVM is with rbf kernel and PCA with 128 components.
 
-Above, **Correlation** means correlation of rows and columns of normalized confusion matrix (see "noramlized correlation" in $\S2$ of our [final notebook](https://github.com/dhk628/erdos-companydiscourse/blob/main/final_notebook.ipynb) for more details).
+Above, **Correlation** means correlation of rows and columns of normalized confusion matrix (see "normalized correlation" in $\S2$ of our [final notebook](https://github.com/dhk628/erdos-companydiscourse/blob/main/final_notebook.ipynb) for more details).
 
 ### Accuracy Plotting
 <center>
@@ -156,11 +156,11 @@ We also test our best perfoming model (Logistic Regression) on the rating data t
 
 ## Conclusion
 
-In this project, we used GTE Sentence Transformers to vectorize the text of Google reviews, which we then used to predict the corresponding star rating. Due to the imbalanced nature of our data, accuracy was not deemed to be the best metric to evaluate our models. We instead also consider the cross entropy loss and the normalized correlation of the confusion matrices. Logistic regression, k-nearest neighbors, support vector classification, XGBoost, and feedforward neural networks all had lower cross entropy than the baseline when trained with the original data. We were able to significantly improve the normalized correlation by randomly undersampling the training data. However, across all models, this came with the cost of higher cross entropy and lower accuracy than those obtained by training on the original data. In both approaches, our models perform well--even for data from other sources--without the need to train the vectorization, signicantly reducing the computational cost for users.
+In this project, we used GTE Sentence Transformers to vectorize the text of Google reviews, which we then used to predict the corresponding star rating. Due to the imbalanced nature of our data, accuracy was not deemed to be the best metric to evaluate our models. We instead also consider the cross entropy loss and the normalized correlation of the confusion matrices. Logistic regression, k-nearest neighbors, support vector classification, XGBoost, and feedforward neural networks all had lower cross entropy than the baseline when trained with the original data. We were able to significantly improve the normalized correlation by randomly undersampling the training data. However, across all models, this came with the cost of higher cross entropy and lower accuracy than those obtained by training on the original data. In both approaches, our models perform well--even for data from other sources--without the need to train the vectorization, significantly reducing the computational cost for users.
 
 ## Future Directions
 
-There are several avenues by which this project can be futher investigated. Firstly, we could consider other metrics that are more suited for imbalanced data, such as the geometric mean or the Area Under the Receiver Operating Characteristic Curve (ROC AUC). Furthermore, we could employ other undersampling or oversampling methods, although many of these come with a significantly higher computational cost than randomly undersampling. The choice of sentence transformer, i.e. using a pre-trained vectorization model other than GTE, could also affect our results. Finally, we could train and test unsupervised models using text data with no ratings, for example, comments on Reddit.
+There are several avenues by which this project can be further investigated. Firstly, we could consider other metrics that are more suited for imbalanced data, such as the geometric mean or the Area Under the Receiver Operating Characteristic Curve (ROC AUC). Furthermore, we could employ other undersampling or oversampling methods, although many of these come with a significantly higher computational cost than randomly undersampling. The choice of sentence transformer, i.e. using a pre-trained vectorization model other than GTE, could also affect our results. Finally, we could train and test unsupervised models using text data with no ratings, for example, comments on Reddit.
 
 ## References
 
