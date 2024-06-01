@@ -94,7 +94,7 @@ We used 66.94% as the baseline accuracy for our models, which corresponds to alw
 </center>
 
 * **A**: the scatter plot of our training set projected on the first and second principal components: note the *imbalance* in our data
-* **B**: the histogram for ratings in our testing set
+* **B**: the histogram for ratings in our training set
 
 ## Model Performances
 
