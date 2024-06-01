@@ -20,8 +20,8 @@ There is a wealth of information in the discourse on companies and their product
 ## Table of Contents
 - [Project Description](#description)
 - [Project Structure](#project-structure)
-- [Installation & Usage / Reproducability](#installation-usage-reproducability)
-- [Data](#data)
+- [Installation, Usage, and Reproducability](#installation,-usage,-and reproducability)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Models](#models)
 - [Results](#results)
 - [References](#references)
@@ -40,7 +40,7 @@ This project utilizes Natural Language Processing (NLP) and ML techniques to con
 - `README.md`: Project documentation and instructions
 - `erdos_company_discourse.yml`: Project environment
 
-## Installation & Usage / Reproducability
+## Installation, Usage, and Reproducability
 The final models for the project are stored in the [`models`](https://github.com/dhk628/erdos-companydiscourse/tree/main/models) folder. The model for support vector classification is large and is stored in [Google Drive](https://drive.google.com/file/d/1lqYpduA7rfBSZCMB_yUyadeiGKJsFb9B/view?usp=sharing). To apply them to reviews you need to:
 1. Vectorize a list of reviews using `SentenceTransformer("thenlper/gte-large").encode(reviews)` from the package [sentence-transformers](https://www.sbert.net/).
 2. Load one of the models and apply `model.predict(review_vectors)` to the corresponding vector list.
@@ -51,11 +51,13 @@ To reproduce the training and testing done for this project you need to:
 3. `sbert_vectorizing.py` contains the necessary code to vectorize and store the reviews.
 4. Use `scikit_models.py` to train scikit-learn models, and `xgboost_training.ipynb` and `neural_network_implementation.ipynb` to train the respective models.
 
-## Data
+## Exploratory Data Analysis
 ### Overview
 We used the dataset [Google Local Data](https://datarepo.eng.ucsd.edu/mcauley_group/gdrive/googlelocal/) to train our models. This dataset includes all Google Maps reviews from 2021 in the United States, up to September 2021. We extracted all reviews associated with a Costco location (usually there is more than one Google Map ID for each Costco warehouse), and we excluded all reviews that were not in English. We did not alter the review text in any way before vectorizing.
 
-After exclusions, the dataset includes 788766 reviews from 2473 unique Google Maps locations. We use 80% of it as our training data and the rest as test data. The training data is heavily biased towards 5 stars, with the distribution being:
+After exclusions, the dataset includes 788766 reviews from 2473 unique Google Maps locations. We use Sentence Transformers, a state-of-the-art text embedding NLP, to vectorize the reviews. These vectors then serve as input features for building predictive models for ratings. The pre-trained model for our sentence transformer is GTE (General Text Embeddings with Multi-stage Contrastive Learning) developed by Alibaba Group NLP team in [[5]](https://arxiv.org/abs/2308.03281).
+
+We use 80% of the review vectors with ratings as our training data and the rest as test data. The training data is heavily biased towards 5 stars, with the distribution being:
 
 <center>
 
@@ -66,17 +68,19 @@ After exclusions, the dataset includes 788766 reviews from 2473 unique Google Ma
 | 3      | 48264  | 6.12%      |
 | 2      | 18805  | 2.38%      |
 | 1      | 39205  | 4.97%      |
+    
+</center>
 
-- Baseline Model
+We used 66.94% as the baseline accuracy for our models, which corresponds to always predicting 5 stars. The following is the complete list of model generation techniques we used:
+
+- Baseline Model (i.e., always predict 5 stars)
 - Logistic Regression
 - K-Nearest Neighbors
 - Support Vector Machine for Classification
 - XGBoost Classifier
 - Feedforward Neural Network
 
-</center>
-
-In the [Results](#results) section, we used 66.94% as the baseline accuracy for our models, which corresponds to always predicting 5 stars.
+### Data Visualization
 
 <center>
 <img src="images/SVG/figure2.svg" width="100%"></img>
@@ -85,8 +89,8 @@ In the [Results](#results) section, we used 66.94% as the baseline accuracy for 
 * **A**: the scatter plot of our training set projected on the first and second principal components
 * **B**: the histogram for ratings in our testing set
 
-## Models
-We modeled the data using the following models:
+
+
 
 
 ### Results & Model Comparison
