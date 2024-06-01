@@ -20,7 +20,7 @@ There is a wealth of information in the discourse on companies and their product
 ## Table of Contents
 - [Project Description](#description)
 - [Project Structure](#project-structure)
-- [Installation, Usage, and Reproducability](#installation,-usage,-and reproducability)
+- [Installation, Usage, and Reproducability](#installation-usage-and-reproducability)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Models](#models)
 - [Results](#results)
