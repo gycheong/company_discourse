@@ -23,6 +23,8 @@ There is a wealth of information in the discourse on companies and their product
 - [Installation, Usage, and Reproducability](#installation-usage-and-reproducability)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Model Performances](#model-performances)
+- [Conclusion](#conclusion)
+- [Future Directions](#future-directions)
 - [References](#references)
 
 ## Project Description
