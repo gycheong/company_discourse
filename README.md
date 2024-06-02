@@ -5,8 +5,8 @@
 There is a wealth of information in the discourse on companies and their products on social media platforms and online forums. This project aims to build and train machine learning (ML) models to predict google star reviews from google text reviews for a target company. This approach is computationally efficient while maintaining contextual integrity in the data and leveraging complex analytical techniques to gauge audience sentiment through online discourse.
 
 **To view a detailed description of the entire project**, please see our [final Jupyter notebook](https://github.com/dhk628/erdos-companydiscourse/blob/main/final_notebook.ipynb).
-<center>
-</center>
+
+**Video Presentation** is available at the [Erdős Institute website](https://www.erdosinstitute.org/project-database/may-summer-2024/data-science-boot-camp/company-discourse%3A-how-are-people-talking-about-my-company-online%3F).
 
 ## Authors
 - [Vinicius Ambrosi](https://www.linkedin.com/in/vinicius-ambrosi/) (![Github](http://i.imgur.com/9I6NRUm.png):
