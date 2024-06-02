@@ -6,7 +6,7 @@ There is a wealth of information in the discourse on companies and their product
 
 **To view a detailed description of the entire project**, please see our [final Jupyter notebook](https://github.com/dhk628/erdos-companydiscourse/blob/main/final_notebook.ipynb).
 
-**Video Presentation** is available at the [Erdős Institute website](https://www.erdosinstitute.org/project-database/may-summer-2024/data-science-boot-camp/company-discourse%3A-how-are-people-talking-about-my-company-online%3F).
+The **video presentation** is available at the [Erdős Institute website](https://www.erdosinstitute.org/project-database/may-summer-2024/data-science-boot-camp/company-discourse%3A-how-are-people-talking-about-my-company-online%3F).
 
 ## Authors
 - [Vinicius Ambrosi](https://www.linkedin.com/in/vinicius-ambrosi/) (![Github](http://i.imgur.com/9I6NRUm.png):
